@@ -1,6 +1,6 @@
 body{
     font-family: 'Times New Roman', Times, serif ;
-    background-color: rgb(143, 143, 255);
+    background-color: rgb(166, 181, 245);
     display:flex;
     justify-content: center;
     align-items: center;
@@ -8,10 +8,11 @@ body{
 }
 
 .contenedor{
-    background-color: blueviolet;
+    background-color: rgb(198, 78, 202);
     border-radius: 10px;
     max-width: 600px;
     box-shadow: 0 0 40px black;
     padding: 20px
-    width  90%;
+    width 90%;
+    
 }
