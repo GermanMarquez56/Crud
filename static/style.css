@@ -1,0 +1,17 @@
+body{
+    font-family: 'Times New Roman', Times, serif ;
+    background-color: rgb(143, 143, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contenedor{
+    background-color: blueviolet;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 40px black;
+    padding: 20px
+    width  90%;
+}
