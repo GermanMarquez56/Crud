@@ -11,29 +11,22 @@
     
 <div class="contenedor">
 
-    <h2 style="color: rgb(255, 255, 255);">
-        REGISTRO DE USUARIO
-    </h2>
-
+    <h2 style="color: rgb(255, 255, 255);">USUARIO A EDITAR</h2>
     <form method="POST">
-        <input type="text" placeholder="Ingrese un nombre" name="nombre" required>
-        <input type="text" placeholder="Ingrese un email" name="correo" required>
+
+        <input type="text" placeholder="Ingrese un nombre" name="nombre", required>
+        <input type="text" placeholder="Ingrese un email" name="correo", required>
 
         <button>Registrar</button>
     </form>
     <table>
-        <tr><th>id</th><th>nombre usuario</th><th>correo us</th><th>acciones</th></tr>
+        <tr><th>id</th><th>nombre usuario</th><th>correo usuario</th><th>acciones</th></tr>
         {% for persona in usuario   %}
         <tr>
             <td>{{ persona.id }}</td>
             <td>{{ persona.nombre }}</td>
             <td>{{ persona.correo }}</td>
-            
-            <td>
-                <a href="">editar</a>
-                |
-                <a href="/?eliminar={{ persona.id }}">eliminar</a>
-            </td>
+            <td><a href="/?eliminar={{ persona.id }}">eliminar</a></td>
         </tr>
 
         {% endfor %}
