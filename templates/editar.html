@@ -13,12 +13,20 @@
 
     <h2 style="color: rgb(255, 255, 255);">USUARIO A EDITAR</h2>
     <form method="POST">
+        <input type="number" name="id" value="{{usuario_a_editar.id}}" readonly>
+        <input type="text" placeholder="Ingrese un nombre" name="nombre" value="{{usuario_a_editar.nombre}}" required>
+        <input type="text" placeholder="Ingrese un email" name="correo" value="{{usuario_a_editar.correo}}" required>
 
-        <input type="text" placeholder="Ingrese un nombre" name="nombre", required>
-        <input type="text" placeholder="Ingrese un email" name="correo", required>
-
-        <button>Registrar</button>
+        <button>Actualizar usuario</button>
     </form>
+
+    <button style="margin-top:10px; background-color:black; color:rgb(243, 34, 34)">
+        <a href="/" style="color:rgb(248, 43, 43); text-decoration:none">
+            Regresar al home
+        </a>
+    </button>
+
+
     <table>
         <tr><th>id</th><th>nombre usuario</th><th>correo usuario</th><th>acciones</th></tr>
         {% for persona in usuario   %}
@@ -31,7 +39,6 @@
 
         {% endfor %}
     </table>
-
 
 </div>
 
